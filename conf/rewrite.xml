@@ -1,0 +1,19 @@
+    <?xml 
+    version="1.0" encoding="UTF-8">
+    <rewrite>
+        <item>
+            <urlPrefix>/detail</urlPrefix>
+            <urlRegex>^/detail(/(.*))?$</urlRegex>
+            <urlRegexReplace>/detail?q=$2</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item>
+        <item>
+            <urlPrefix>/widget/yan</urlPrefix>
+            <urlRegex>^/widget/yan(/(.*))?$</urlRegex>
+            <urlRegexReplace>/widgetyan?q=$2</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item>
+    </rewrite>
+</xml>
