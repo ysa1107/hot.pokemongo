@@ -1,0 +1,139 @@
+<div class="container main_home_container main_home">
+            <div class="col-md-8 col-lg-8" style="display:block; clear:both; margin:0px auto; padding:0px; padding-bottom:70px;">
+                <div id="media" style="padding-bottom: 70px; position: relative; height: 588.688px;">
+                    <div class="col-sm-12 item animated single-left" data-href="#" data-id="216" style="position: absolute; left: 0px; top: 0px;">
+                       
+                        <div class="social_container">
+                            <ul class="socialcount socialcount-large" data-url="#">
+                                <li class="facebook"><a href="http://www.facebook.com/sharer/sharer.php?u={{ROOT_URL}}detail/{{key}}&display=popup&caption=HotPokemonGo.Com" target="_blank" title="Share on Facebook" onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"><span class="fa fa-facebook"></span><span class="count">Share</span></a></li>
+                                <li class="twitter"><a href="https://twitter.com/intent/tweet?original_referer={{url}}&text={{title}}&url={{ROOT_URL}}detail/{{key}}&via=hotpokemongo" title="Share on Twitter"><span class="fa fa-twitter"></span><span class="count">Tweet</span></a></li>
+                                <li class="googleplus"><a href="https://plus.google.com/share?url={{ROOT_URL}}detail/{{key}}" target="_blank" title="Share on Google Plus" onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"><span class="fa fa-google-plus"></span><span class="count">+1</span></a></li>
+                                <li class="pinterest"><a href="//www.pinterest.com/pin/create/button/?url={{ROOT_URL}}detail/{{key}}&amp;media={{media_url}}&amp;description={{title}}" title="lang.share_pinit" target="_blank" onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"><span class="fa fa-pinterest"></span><span class="count">Pin It</span></a></li>                      
+                            </ul>
+                        </div>
+                        <div class="item-large">
+                            <div class="single-title">
+                                <a href="#">
+                                    <img src="{{STATIC_URL}}images/logo.jpg" class="img-circle user-avatar-medium" data-pin-nopin="true">
+                                </a>
+                                <h2 class="item-title">
+                                    <a href="#" alt="{{title}}">{{title}}</a>
+                                </h2>
+                                <div class="item-details">
+                                    <p class="details">Submitted By: <a href="#">HotPokemonGo</a> on {{created}}</p>
+                                    <p class="home-like-count"><i class="fa fa-thumbs-o-up"></i> <span>{{liked}}</span></p>
+                                    <p class="home-comment-count"><i class="fa fa-comments"></i> {{commented}}</p>
+                                    <p class="home-view-count"><i class="fa fa-eye"></i> {{viewed}} </p>
+                                </div> 
+                                <h5>{{tags}}</h5>
+                                    {{#DESCRIPTION}}
+                                    <div class="description">
+                                        {{description}}
+                                    </div>
+                                    {{/DESCRIPTION}}
+                             {{#IS_PIC}}
+                                    <!-- Preview Image -->
+                                    <img class="img-responsive center-block" src="{{media_url}}" alt="">
+                                    <hr>
+
+                                    {{/IS_PIC}}
+                                    {{#IS_VIDEO}}
+                                    <div class="wrapper">
+                                    <div class="videocontent center-block">
+                                        <div id="my-video"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script type="text/javascript">
+                                    jwplayer("my-video").setup({
+                                      "file": "{{media_url}}",
+                                      "image":"{{thumbnail}}",
+                                      "autostart": false,
+                                      "width": "98%",
+                                      "aspectratio": "16:9",
+                                      ga: {
+                                                idstring: "{{title}}",
+                                                label: "{{id}}"
+                                        },
+                                      logo: {
+                                                file: '{{STATIC_URL}}images/logo_26x26.jpg',
+                                                link: 'http://hotpokemongo.com'
+                                        }
+                                    });
+                                    </script>
+                                    {{/IS_VIDEO}}
+                                    {{#IS_YOUTUBE}}
+                                        
+                                        <div class="video-container">
+                                            <iframe src="https://www.youtube.com/embed/{{ytkey}}" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    {{/IS_YOUTUBE}}
+                                    <div class="fb-comments" data-width="100%"
+                                        data-href="{{ROOT_URL}}detail/{{key}}" data-numposts="5"></div>
+                            </div>
+                    
+                            
+    </div>
+                        </div>
+                    </div>
+                </div>
+          
+            <div class="col-md-4 col-lg-4" id="sidebar_container">
+                <!-- OPTIONS BAR -->
+                <div class="options_sidebar">
+                    <h2>Viewing Options:</h2>
+                    <div class="viewing_options">
+                        <i class="fa fa-th-list active" data-url="http://app.ninjamediascript.com/view/list"></i>
+                        <i class="fa fa-th-large " data-url="http://app.ninjamediascript.com/view/grid_large"></i>
+                        <i class="fa fa-th " data-url="http://app.ninjamediascript.com/view/grid"></i>
+                    </div>
+                    <div style="clear:both"></div>
+                </div>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        $('.viewing_options i').click(function(){
+                        window.location = $(this).data('url');
+                        });
+                    });
+                </script>
+                <!-- END OPTIONS BAR -->
+
+                <div id="sidebar_inner-sticky-wrapper" class="sticky-wrapper is-sticky">
+                    <div id="sidebar_inner-sticky-wrapper" class="sticky-wrapper" style="height: 540px;"><div id="sidebar_inner">
+                        <div id="sidebar" style="margin-top:15px;">
+<!--                            <a class="spcl-button color" href="http://app.ninjamediascript.com/upload">Submit Picture or Video</a>-->
+                            <div class="social_block">
+                                <img src="http://app.ninjamediascript.com/content/themes/default/assets/img/social-loader.gif">
+<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FPokémon-Go-Hot-1760825074186135%2F&amp;width&amp;height=220&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+                            </div>
+                            <div class="well">
+                            <section class="get-the-app">
+                            <ul>
+                                <li><a class="app-store" href="#" target="_blank">Download on App Store</a></li>
+                                <li><a class="google-play" href="#" target="_blank">Get it on Google Play</a></li>
+                            </ul>
+                            </section>
+                            <section class="footer">
+                                <p class="static">
+                                    <a href="#">Advertise</a> ·
+                                    <a href="#">Contacts</a> ·
+                                    <a href="#">Privacy</a> ·
+                                    <a href="#">Terms</a> ·
+                                </p>
+                                <p class="static">HOT POKEMON GO © 2016</p>
+                                <a class="badge-scroll-to-top back-to-top show" href="javascript: void(0);">Back to top</a>
+                            </section>
+                        </div>
+                        </div>
+                    </div></div>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $("#sidebar_inner").sticky({topSpacing:50});
+                });
+            </script>
+        </div>
+
+

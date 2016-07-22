@@ -1,0 +1,146 @@
+<div class="container main_home_container main_home">
+            <div class="col-md-8 col-lg-8" style="display:block; clear:both; margin:0px auto; padding:0px; padding-bottom:70px;">
+                <div id="media" style="padding-bottom: 70px; position: relative; height: 588.688px;">
+                    <div class="col-sm-12 item animated single-left" data-href="http://app.ninjamediascript.com/media/216" data-id="216" style="position: absolute; left: 0px; top: 0px;">
+                        <div class="social_container">
+                            <ul class="socialcount socialcount-large" data-url="http://app.ninjamediascript.com/media/highlight-anything-stupid">
+                                <li class="facebook"><a href="http://www.facebook.com/sharer/sharer.php?u={{ROOT_URL}}detail/{{key}}&display=popup&caption=GagLoL69.Com" target="_blank" title="Share on Facebook" onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"><span class="fa fa-facebook"></span><span class="count">Share</span></a></li>
+                                <li class="twitter"><a href="https://twitter.com/intent/tweet?hashtags=gagsmile&original_referer={{url}}&text={{description}}&url={{ROOT_URL}}detail/{{key}}&via=gagbuzzu" data-url="http://app.ninjamediascript.com/media/highlight-anything-stupid" title="Share on Twitter"><span class="fa fa-twitter" data-url="http://app.ninjamediascript.com/media/highlight-anything-stupid"></span><span class="count">Tweet</span></a></li>
+                                <li class="googleplus"><a href="https://plus.google.com/share?url=http://app.ninjamediascript.com/media/highlight-anything-stupid" target="_blank" title="Share on Google Plus" onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"><span class="fa fa-google-plus"></span><span class="count">+1</span></a></li>
+                                <li class="pinterest"><a href="//www.pinterest.com/pin/create/button/?url=http://app.ninjamediascript.com/media/highlight-anything-stupid&amp;media=http://app.ninjamediascript.com/content/uploads/images/February2014/highlight-anything-stupid.jpg&amp;description=Highlight Anything Stupid" title="lang.share_pinit" target="_blank" onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"><span class="fa fa-pinterest"></span><span class="count">Pin It</span></a></li>                      
+                            </ul>
+                        </div>
+                        <div class="item-large">
+                            <div class="single-title">
+                                <a href="http://app.ninjamediascript.com/user/tnylea">
+                                    <img src="{{STATIC_URL}}images/logo.jpg" class="img-circle user-avatar-medium" data-pin-nopin="true">
+                                </a>
+                                <h2 class="item-title">
+                                    <a href="http://app.ninjamediascript.com/media/highlight-anything-stupid" alt="{{title}}">{{title}}</a>
+                                </h2>
+                                <div class="item-details">
+                                    <p class="details">Submitted By: <a href="http://app.ninjamediascript.com/user/tnylea">tnylea</a> on {{created}}</p>
+                                    <p class="home-like-count"><i class="fa fa-thumbs-o-up"></i> <span>{{liked}}</span></p>
+                                    <p class="home-comment-count"><i class="fa fa-comments"></i> {{commented}}</p>
+                                    <p class="home-view-count"><i class="fa fa-eye"></i> {{viewed}} </p>
+                                </div>    
+                                <div class="home-media-like " data-authenticated="false" data-id="216">
+                                    <i class="fa fa-thumbs-o-up"></i>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+<!--                            <a href="" alt="Highlight Anything Stupid">
+                                <img class="single-media" alt="Highlight Anything Stupid" src="http://app.ninjamediascript.com/content/uploads/images/February2014/highlight-anything-stupid.jpg">
+                            </a>-->
+<h5>{{tags}}</h5>
+        {{#DESCRIPTION}}
+        <div class="description">
+            {{description}}
+        </div>
+        {{/DESCRIPTION}}
+                             {{#IS_PIC}}
+                                    <!-- Preview Image -->
+                                    <img class="img-responsive center-block" src="{{media_url}}" alt="">
+                                    <hr>
+
+                                    {{/IS_PIC}}
+                                    {{#IS_VIDEO}}
+                                    <div class="wrapper">
+                                    <div class="videocontent center-block">
+                                    <video id="my-video" class="video-js vjs-default-skin" controls preload="auto"
+                                           poster="{{thumbnail}}" data-setup="{}" width="auto" height="auto" >
+                                      <source src="{{media_url}}" type='video/mp4'>
+                                      <p class="vjs-no-js">
+                                        To view this video please enable JavaScript, and consider upgrading to a web browser that
+                                        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                      </p>
+                                    </video>
+                                        </div>
+                                    </div>
+                                    {{/IS_VIDEO}}
+                                    {{#IS_YOUTUBE}}
+
+                            <div class="video-container"><iframe src="https://www.youtube.com/embed/{{ytkey}}" frameborder="0" allowfullscreen></iframe></div>
+
+                                    {{/IS_YOUTUBE}}
+<!--<div class="fb-comments" data-width="100%"
+             data-href="{{ROOT_URL}}detail/{{key}}" data-numposts="5"></div>-->
+    </div>
+                        </div>
+                    </div>
+                </div>
+          
+            <div class="col-md-4 col-lg-4" id="sidebar_container">
+                <!-- OPTIONS BAR -->
+                <div class="options_sidebar">
+                    <h2>Viewing Options:</h2>
+                    <div class="viewing_options">
+                        <i class="fa fa-th-list active" data-url="http://app.ninjamediascript.com/view/list"></i>
+                        <i class="fa fa-th-large " data-url="http://app.ninjamediascript.com/view/grid_large"></i>
+                        <i class="fa fa-th " data-url="http://app.ninjamediascript.com/view/grid"></i>
+                    </div>
+                    <div style="clear:both"></div>
+                </div>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        $('.viewing_options i').click(function(){
+                        window.location = $(this).data('url');
+                        });
+                    });
+                </script>
+                <!-- END OPTIONS BAR -->
+
+                <div id="sidebar_inner-sticky-wrapper" class="sticky-wrapper is-sticky">
+                    <div id="sidebar_inner-sticky-wrapper" class="sticky-wrapper" style="height: 540px;"><div id="sidebar_inner">
+                        <div id="sidebar" style="margin-top:15px;">
+<!--                            <a class="spcl-button color" href="http://app.ninjamediascript.com/upload">Submit Picture or Video</a>-->
+                            <div class="social_block">
+                                <img src="http://app.ninjamediascript.com/content/themes/default/assets/img/social-loader.gif">
+<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FGag-LoL-69-1764773677074234%2F&amp;width&amp;height=220&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+                            </div>
+                            <div class="well">
+                            <section class="get-the-app">
+                            <ul>
+                                <li><a class="app-store" href="#" target="_blank">Download on App Store</a></li>
+                                <li><a class="google-play" href="#" target="_blank">Get it on Google Play</a></li>
+                            </ul>
+                            </section>
+                            <section class="footer">
+                                <p class="static">
+                                    <a href="#">Advertise</a> ·
+                                    <a href="#">Contacts</a> ·
+                                    <a href="#">Privacy</a> ·
+                                    <a href="#">Terms</a> ·
+                                </p>
+                                <p class="static">GagLoL69 © 2016</p>
+                                <a class="badge-scroll-to-top back-to-top show" href="javascript: void(0);">Back to top</a>
+                            </section>
+                        </div>
+                        </div>
+                    </div></div>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $("#sidebar_inner").sticky({topSpacing:50});
+                });
+            </script>
+        </div>
+
+<script type="text/javascript">
+    //videojs.autoSetup();
+    videojs('my-video').ready(function(){
+      console.log(this.options()); //log all of the default videojs options
+      var myPlayer = this, id = myPlayer.id();
+      var aspectRatio = 264/640; 
+      function resizeVideoJS(){
+        var width = document.getElementById(id).parentElement.offsetWidth;
+        myPlayer.width(width).height( width * aspectRatio );
+
+      }
+      resizeVideoJS();
+      window.onresize = resizeVideoJS; 
+    });
+    
+</script>

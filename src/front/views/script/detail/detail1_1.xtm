@@ -1,0 +1,88 @@
+<div class="row">
+    <div class="col-lg-8">
+        <h1>{{title}}</h1>
+        <hr>
+        <!-- Date/Time -->
+        <p><span class="glyphicon glyphicon-time"></span> Posted on: {{created}}</p>
+        <h5>{{tags}}</h5>
+        {{#DESCRIPTION}}
+        <div class="description">
+            {{description}}
+        </div>
+        {{/DESCRIPTION}}
+        <hr>
+        {{#IS_PIC}}
+        <!-- Preview Image -->
+        <img class="img-responsive center-block" src="{{media_url}}" alt="">
+        <hr>
+        
+        {{/IS_PIC}}
+        {{#IS_VIDEO}}
+        <div class="wrapper">
+        <div class="videocontent center-block">
+        <video id="my-video" class="video-js vjs-default-skin" controls preload="auto"
+               poster="{{thumbnail}}" data-setup="{}" width="auto" height="auto" >
+          <source src="{{media_url}}" type='video/mp4'>
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a web browser that
+            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+          </p>
+        </video>
+            </div>
+        </div>
+        {{/IS_VIDEO}}
+        {{#IS_YOUTUBE}}
+        
+<div class="video-container"><iframe src="https://www.youtube.com/embed/{{ytkey}}" frameborder="0" allowfullscreen></iframe></div>
+            
+        {{/IS_YOUTUBE}}
+
+<a href="http://www.facebook.com/sharer/sharer.php?u={{ROOT_URL}}detail/{{key}}&display=popup&caption=GagSmile.Com" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><button style="width:50%; margin-top:10px;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Share on Facebook</button></a>
+<a href="https://twitter.com/intent/tweet?hashtags=gagsmile&original_referer={{url}}&text={{description}}&url={{ROOT_URL}}detail/{{key}}&via=gagbuzzu">
+    
+    <button class="btn btn-tweet btn-lg" style="width:48%; margin-top:10px;" type="button" ><i class="fa fa-facebook fa-2"></i> Share on Twitter</button>
+</a>
+
+
+<div class="fb-comments" data-width="100%"
+             data-href="{{ROOT_URL}}detail/{{key}}" data-numposts="5"></div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="well">
+            <section class="get-the-app">
+            <ul>
+                <li><a class="app-store" href="https://itunes.apple.com/us/app/gagbuzz/id1115053478?mt=8" target="_blank">Download on App Store</a></li>
+                <li><a class="google-play" href="https://play.google.com/store/apps/details?id=com.thh.gag8" target="_blank">Get it on Google Play</a></li>
+            </ul>
+            </section>
+            <section class="footer">
+                <p class="static">
+                    <a href="#">Advertise</a> ·
+                    <a href="#">Contacts</a> ·
+                    <a href="#">Privacy</a> ·
+                    <a href="#">Terms</a> ·
+                </p>
+                <p class="static">GagBuzz © 2016</p>
+                <a class="badge-scroll-to-top back-to-top show" href="javascript: void(0);">Back to top</a>
+            </section>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    //videojs.autoSetup();
+    videojs('my-video').ready(function(){
+      console.log(this.options()); //log all of the default videojs options
+      var myPlayer = this, id = myPlayer.id();
+      var aspectRatio = 264/640; 
+      function resizeVideoJS(){
+        var width = document.getElementById(id).parentElement.offsetWidth;
+        myPlayer.width(width).height( width * aspectRatio );
+
+      }
+      resizeVideoJS();
+      window.onresize = resizeVideoJS; 
+    });
+    
+</script>

@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>HOT POKÉMON GO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Fresh lol images, videos, gifs every minute">
+    <meta name="author" content="GagLOL69"> 
+    
+    <link rel="canonical" href="http://gaglol69.com" />
+    <meta content="index, follow" name="robots" />
+    <meta property="og:url" content="http://gaglol69.com" />
+    <meta property="og:site_name" content="GagLol69" />
+    <meta property="fb:app_id" content="297345190606310"/>
+    <meta property="og:title" content="GAG LOL 69"/>
+    <meta property="og:image" content="{{STATIC_URL_PROMOTE}}images/logo.jpj"/>
+    <meta name="author" content="GagLol69.com" />
+    <meta name="copyright" content="GagLol69.Com" />
+    <meta content="Fresh lol images, videos, gifs every minute" name="description" />        
+    <link rel="shortcut icon" type="image/x-icon" href="{{STATIC_URL_PROMOTE}}images/favicon.ico"/> 
+    
+    <link rel="stylesheet" href="{{STATIC_URL_PROMOTE}}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL_PROMOTE}}css/animate.css">
+    <link rel="stylesheet" href="{{STATIC_URL_PROMOTE}}css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL_PROMOTE}}css/owl.carousel.css">
+    <link rel="stylesheet" href="{{STATIC_URL_PROMOTE}}css/owl.theme.css">
+    <link rel="stylesheet" href="{{STATIC_URL_PROMOTE}}css/styles.css">
+    <script src="{{STATIC_URL_PROMOTE}}js/modernizr.custom.32033.js"></script>   
+</head>
+<body>
+    <h1>HOT POKEMON GO COMING SOON!!</h1>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{STATIC_URL_PROMOTE}}js/bootstrap.min.js"></script>
+    <script src="{{STATIC_URL_PROMOTE}}js/owl.carousel.min.js"></script>
+    <script src="{{STATIC_URL_PROMOTE}}js/waypoints.min.js"></script>
+
+<!--    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>-->
+
+    <!-- jQuery REVOLUTION Slider  -->
+    <script type="text/javascript" src="{{STATIC_URL_PROMOTE}}rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL_PROMOTE}}rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script src="{{STATIC_URL_PROMOTE}}js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            appMaster.preLoader();
+        });
+    </script>
+<!--    <script type="text/javascript">
+            $(document).ready(function() {
+                    $("body").append("<img width='1px' height='1px' title='latency' alt='latency' src='{{ROOT_URL}}latency.jpg?time={{latency_time}}&token={{latency_token}}&u={{latency_user_name}}' />");
+            });        
+        </script>-->
+</body>
+</html>

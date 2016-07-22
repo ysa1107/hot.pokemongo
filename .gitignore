@@ -4,3 +4,19 @@ production.config.ini
 production.log4j.ini
 
 rewrite.xml
+
+nbproject/private/private.xml
+
+nbproject/project.xml
+
+build.xml
+
+nbproject/build-impl.xml
+
+nbproject/genfiles.properties
+
+nbproject/private/config.properties
+
+nbproject/private/private.properties
+
+nbproject/project.properties

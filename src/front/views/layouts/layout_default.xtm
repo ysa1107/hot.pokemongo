@@ -1,0 +1,337 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{TITLE}}</title>
+        
+        <meta content="{{KEYWORDS}}" name="keywords" />
+        {{CANONICAL}}
+        {{ALTERNATE_URL}}
+        <meta content="{{ROBOTS}}" name="robots" />
+        {{OG_FB_URL}}
+        {{OG_FB_SITE_NAME}}
+        {{OG_FB_TYPE}}
+        
+        <link rel="image_src" href="{{IMAGE}}" />
+        <link rel="shortcut icon" type="image/x-icon" href="{{STATIC_URL}}images/favicon.ico"/> 
+        <meta property="fb:app_id" content="257348727980586"/>
+        <meta property="og:title" content="{{OG_FB_TITLE}}"/>
+        <meta property="og:image" content="{{IMAGE_FB}}"/>
+        <meta name="author" content="HotPokemonGo.Com" />
+        <meta name="copyright" content="HotPokemonGo.Com" />
+        <meta content="{{DESCRIPTION}}" name="description" />   
+        <meta property="article:author" content="https://www.facebook.com/Pokémon-Go-Hot-1760825074186135" />
+<!--       <meta name="apple-itunes-app" content="app-id=1115053478">-->
+        <!-- Bootstrap Core CSS -->
+        <link href="{{STATIC_URL}}css/bootstrap.min.css" rel="stylesheet">        
+        <link rel="stylesheet" href="{{STATIC_URL}}css/font-awesome.min.css" />
+        <link rel="stylesheet" href="{{STATIC_URL}}css/animate.min.css" />
+        <link rel="stylesheet" href="{{STATIC_URL}}css/style.css" />
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <link href="{{STATIC_URL}}css/custom.{{CUSTOM_CSS}}.css" rel="stylesheet">
+        
+      
+         <style type="text/css">
+        .navbar-fixed-top { z-index: 999999999; }
+        .btn.btn-color, input[type="submit"] {
+            background:#db3b3b !important;
+            color:#fff;
+            border-radius:0px;
+        }
+
+        h2 i { color:#db3b3b; }
+
+        .btn-color:hover { color:#fff; }
+
+        .btn.btn-radio { background: #ef4f4f; color:#fff; }
+
+        .btn.btn-radio.active { background:#db3b3b; color:#fff; }
+
+        #nprogress .bar { background:#db3b3b; }
+
+        #nprogress .spinner-icon { border-top-color:#db3b3b; border-left-color:#db3b3b; }
+        #nprogress .peg { box-shadow: 0 0 10px #db3b3b, 0 0 5px #db3b3b; }
+
+        .nav .caret, .nav>li>a, .navbar .navbar-nav>.active>a, .nav a:hover .caret {
+            color:#db3b3b;
+            border-top-color:#db3b3b;
+            border-bottom-color:#db3b3b;
+        }
+
+        .navbar-nav>li>a.upload-btn, .navbar-inverse .navbar-nav>li>a:hover { background:#db3b3b; }
+
+        .active .nav-border-bottom { background:#db3b3b; }
+
+        .form-control:focus { border-color:#db3b3b; }
+
+        a.spcl-button.color { background-color:#db3b3b; }
+
+        .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background:#db3b3b; }
+
+        ul.tags li a { background:#db3b3b; }
+
+        div.tagsinput span.tag {
+            border:1px solid #db3b3b;
+            color:#fff;
+            background:#ef4f4f;
+        }
+
+        .table-striped>tbody>tr:first-child>th {
+            background:#db3b3b;
+            border:0px;
+            color:#fff;
+        }
+
+        .table-striped>tbody>tr:first-child { border:0px; }
+        .table-striped>tbody>tr:nth-child(2)>td { border-top-color:#ff6d6d; }
+
+        .pagination>li>a { background:#a90909; }
+
+        .pagination>li>span, .pagination>.active>span, .pagination>li>a:hover, .pagination>.active>span:hover { background:#ff6d6d; }
+
+        .pagination>li>span:hover, .pagination>.disabled>span { background:#ff9f9f; color:#a90909; }
+
+        .pagination>li>a, .pagination>li>span, .pagination>.disabled>span, .pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus, .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+            border:1px solid #db3b3b;
+        }
+
+        div.tagsinput span.tag a { color:#a90909; }
+
+        a.spcl-button.color:hover { background-color:#ef4f4f; color:#fff; }
+
+        .btn.btn-prev:hover, .btn.btn-next:hover { background:#db3b3b; }
+
+        /********** SECONDARY COLOR **********/
+        .home-media-like.active { background:#0098cb; }
+
+        p.home-like-count { color:#0098cb; }
+
+        a, a:hover, a:focus { color:#0098cb; }
+
+        .user-menu p { color:#0098cb; }
+
+        #next_media li a div.active, #next_media li a:hover div { border-color:#0098cb; }
+
+        .admin-block.active, .admin-block:hover { border-color:#db3b3b; }
+
+        h2.subheader { border-color:#a90909; background:#db3b3b; }
+
+        .ouro:after { background-color:#db3b3b; }
+
+        .ouro { background-color:#ff6d6d; }
+
+        h2.subheader i { color:#a90909; }
+
+        .load-more-btn { border-bottom-color:#a90909; }
+
+        .gallery-sub-header { top:0px; }
+        .main_home_container { padding-top:0px; }
+    </style>
+    <script type="text/javascript" src="{{STATIC_URL}}js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/jquery.infinitescroll.min.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/jquery.fitvid.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/jquery.timeago.js"></script>
+    <script src="{{STATIC_URL}}jwplayer/jwplayer.js"></script>
+    <script>jwplayer.key="hLLfEKc/SOoDjax5oldXOl3CyRhwJTL8Y2Oy8w==";</script>
+    </head>
+    <body>
+        
+<nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="#"><img class="img-circle user-avatar-medium" src="{{STATIC_URL}}images/logo.jpg" style="height:35px; width:auto;" data-pin-nopin="true"></a>
+
+                <div class="mobile-menu-toggle"><i class="fa fa-bars"></i></div>
+
+                <!-- MOBILE NAV -->
+                <div class="mobile-menu">
+                    <ul>
+                        <li class="active"><a href="{{ROOT_URL}}"><i class="fa fa-home"></i> Home</a></li>
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-star"></i> Popular <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://app.ninjamediascript.com/popular/week">for the Week</a></li>
+                                <li><a href="http://app.ninjamediascript.com/popular/month">for the Month</a></li>
+                                <li><a href="http://app.ninjamediascript.com/popular/year">for the Year</a></li>
+                                <li><a href="http://app.ninjamediascript.com/popular">All Time</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle categories" data-toggle="dropdown"><i class="fa fa-folder-open"></i> Categories <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Video</a>
+                                    <a href="#">Images</a>
+                                    <a href="#">Gif</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- END MOBILE NAV -->
+<!--                    <ul class="nav navbar-nav navbar-right">
+                        <li class=""><a href="http://app.ninjamediascript.com/login">Login</a></li>
+                        <li class=""><a href="http://app.ninjamediascript.com/signup">Sign up</a></li>
+                        <li><a href="http://app.ninjamediascript.com/upload" class="upload-btn"><i class="fa fa-cloud-upload"></i> Upload</a></li>
+                    </ul>-->
+                </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-left nav-desktop">
+                    <!--li><a href="#" id="categories_open"><i class="fa fa-th-list"></i> Categories</a></li-->
+                    <li class="active"><a href="{{ROOT_URL}}"><i class="fa fa-home"></i><span> Home</span></a><div class="nav-border-bottom"></div></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-star"></i><span> Popular </span><b class="caret"></b><div class="nav-border-bottom"></div></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://app.ninjamediascript.com/popular/week">for the Week</a></li>
+                            <li><a href="http://app.ninjamediascript.com/popular/month">for the Month</a></li>
+                            <li><a href="http://app.ninjamediascript.com/popular/year">for the Year</a></li>
+                            <li><a href="http://app.ninjamediascript.com/popular">All Time</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle categories" data-toggle="dropdown"><i class="fa fa-folder-open"></i><span> Categories </span><b class="caret"></b><div class="nav-border-bottom"></div></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Video</a>
+                                <a href="#">Images</a>
+                                <a href="#">Gif</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text"></i> More <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://app.ninjamediascript.com/pages/add-pages">Add Pages</a></li>
+                        </ul>
+                    </li>
+                </ul>
+<!--                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown dropdownNotifi">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell"></i>
+                        </a>
+                    </li>
+                    <li><a href="http://app.ninjamediascript.com/random" class="random"><i class="fa fa-random"></i></a></li>
+                    <li><a href="http://app.ninjamediascript.com/upload" class="upload-btn upload-btn-desktop"><i class="fa fa-cloud-upload"></i> Upload</a></li>
+                    <li class=""><a href="http://app.ninjamediascript.com/login" id="login-button-desktop">Login</a><div class="nav-border-bottom"></div></li>
+                    <li class=""><a href="http://app.ninjamediascript.com/signup" id="signup-button-desktop">Sign up</a><div class="nav-border-bottom"></div></li>
+                </ul>-->
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+        <div id="random-bar">
+        <div id="random-left"><i class="fa fa-angle-left"></i></div>
+        <div id="random-right"><i class="fa fa-angle-right"></i></div>
+        <div class="container random-container">
+            <div id="random-slider">
+                {{slideshow}}
+            </div>
+        </div>
+    </div>
+        <div id="main_container" class="random_bar">
+            <div class="navbar gallery-sub-header" style="z-index:9;">
+            <div class="container">
+                <div class="pull-left desc-follow">
+                    <p class="website_desc pull-left">More Gag, More Fun</p>
+                    <div class="twitter-follow pull-left">
+                            <a class="twitter-follow-button"
+                              href="https://twitter.com/hotpokemongo"></a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </div>
+                    <div class="facebook-like pull-left">
+                        <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FGag-LoL-69-1764773677074234%2F&amp;width=&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:95px; height:21px;" allowtransparency="true"></iframe>
+                    </div>
+                </div>
+                <div class="pull-right mobile-pull-right">
+                    <form class="navbar-form search-form col-xs-12" role="search" style="margin:0px; padding-top:4px;" action="http://app.ninjamediascript.com" method="GET">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="search" placeholder="Search" style="-webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; height:30px;">
+                            </div>
+                      </form>
+
+                    <div class="search_settings">
+                        <i class="fa fa-search"></i>
+                        <i class="fa fa-cog option-sidebar-toggle"><span class="cog-arrow-up">▲</span><span class="cog-arrow-down">▼</span></i>
+
+                    </div>
+                    <script>
+                        $(document).ready(function(){
+                            $('.option-sidebar-toggle').click(function(){
+                                $(this).toggleClass('clicked');
+                                $('.options_sidebar').slideToggle();
+                                $('.cog-arrow-down').toggle();
+                                $('.cog-arrow-up').toggle();
+                            });
+
+                            $('.fa-search').click(function(){
+                                $('.search-form').toggle();
+                                $('.search-form input').focus();
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+            {{main_content}}
+        </div>
+        <div id="footer">&copy; 2016 HOT POKEMON GO</div>
+
+    <script type="text/javascript" src="{{STATIC_URL}}js/jquery.noty.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/default.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/top.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/nprogress.js"></script>
+    
+    <script type="text/javascript" src="{{STATIC_URL}}js/script.js"></script>
+    
+    </body>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81136045-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script>
+window.fbAsyncInit = function () {
+    FB.init({
+        appId: '257348727980586',
+        xfbml: true,
+        version: 'v2.6'
+    });
+};
+
+(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {
+        return;
+    }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+    </script>
+</html>
